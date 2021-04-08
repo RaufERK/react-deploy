@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cd front && yarn build",
+    "build": "cd front && yarn && yarn build",
     "start": "node server.js"
   },
   "author": "",
