@@ -4,7 +4,7 @@ const cors = require('cors');
 const path = require('path');
 
 const fronPath = path.resolve('./front/build/');
-const frontFile = '/index.html';
+const frontFile = path.resolve('./front/build/index.html');
 
 app.use(cors());
 app.use(express.static(fronPath));
@@ -21,7 +21,7 @@ app.get('/api', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-  res.sendFile(fronPath + frontFile);
+  res.sendFile(frontFile);
 });
 
 app.listen(process.env.PORT || 8080);
