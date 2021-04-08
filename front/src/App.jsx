@@ -2,8 +2,10 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import About from './Components/About';
 import Home from './Components/Home';
 import Users from './Components/Users';
+import { useHistory } from 'react-router-dom';
 
 const App = () => {
+  const history = useHistory();
   return (
     <div>
       <BrowserRouter>

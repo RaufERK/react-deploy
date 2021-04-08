@@ -4,7 +4,7 @@ const cors = require('cors');
 const path = require('path');
 
 const fronPath = path.resolve('./front/build/');
-const frontFile = 'index.html';
+const frontFile = '/index.html';
 
 app.use(cors());
 app.use(express.static(fronPath));
